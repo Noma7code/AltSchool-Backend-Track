@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+  </head>
+  <body>
+    <a href="table.html">Table</a>
+
+    <h2>Multimedia Representation</h2>
+
+    <h3>Picture</h3>
+    <picture>
+      <!--Laptop view-->
+      <source srcset="../assets/hello.png" media="(min-width: 1024px)" />
+      <!--Tablet view-->
+      <source srcset="../assets/crypto.jpg" media="(min-width: 768px)" />
+      <!--Mobile view-->
+      <source srcset="../assets/ai-essen.jpg" media="(max-width: 767px)" />
+      <img src="../assets/blockchain-network.jpg" alt="pic" />
+    </picture>
+
+    <h3>Audio Message</h3>
+    <audio controls>
+      <source src="../assets/eagle-sound.mp3" type="audio/ogg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video</h3>
+    <video controls>
+      <source src="../assets/cosmic-video.mp4" type="video/mp4" />
+
+      Your browser does not support the video element.
+    </video>
+
+    <h3>Embedded Video</h3>
+    <iframe src="../assets/cosmic-video.mp4"> </iframe>
+  </body>
+</html>

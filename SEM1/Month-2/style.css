@@ -1,0 +1,18 @@
+/*Element selector*/
+
+h1 , h2{
+  color: rgb(48, 48, 138);
+}
+
+/*Id selector*/
+#bio{
+  font-weight: bold;
+}
+
+/*class selector*/
+
+.bio-li{
+  font-style: italic;
+  text-shadow: 1px 1px 2px black, 0 0 5px #ffffff, 0 0 2px darkblue;
+}
+

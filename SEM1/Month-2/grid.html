@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .grid-container {
+        display: grid; /*grid default is row*/
+        row-gap: 5px;
+      }
+      .grid-cell,
+      .grid-cell-2 {
+        background-color: blue;
+      }
+      .grid-container-2 {
+        display: grid;
+        /*grid-template-columns:  1fr 1fr 1fr ; 200px 200px 200px; */
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, 300px);
+        gap: 10px;
+      }
+      .grid-cell-2 {
+        background-color: aqua;
+      }
+      .grid-container-4 {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+      }
+      .grid-cell-4 {
+        background-color: yellowgreen;
+      }
+      .top-row {
+        background-color: teal;
+        height: 100px; /* Adjust height as needed */
+      }
+      .bottom-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5px;
+      }
+      /*mobile view */
+      @media (max-width: 568px) {
+        .grid-container-2 {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-cell">One</div>
+      <div class="grid-cell">Two</div>
+      <div class="grid-cell">Three</div>
+    </div>
+    <br />
+    <br />
+
+    <div class="grid-container-2">
+      <div class="grid-cell-2">Four</div>
+      <div class="grid-cell-2">Five</div>
+      <div class="grid-cell-2">Six</div>
+      <div class="grid-cell-2">Seven</div>
+      <div class="grid-cell-2">Eight</div>
+      <div class="grid-cell-2">Nine</div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="grid-container-4">
+      <div class="top-row">Science</div>
+
+      <div class="bottom-row">
+        <div class="grid-cell-4">Engineering</div>
+        <div class="grid-cell-4">Technology</div>
+        <div class="grid-cell-4">Technology</div>
+      </div>
+    </div>
+  </body>
+</html>

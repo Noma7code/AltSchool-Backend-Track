@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <script
+      src="https://kit.fontawesome.com/27e71573f8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="./styles/sign-up.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section id="section-1">
+      <div class="img-container">
+        <img src="./images/personal-hotspot.png" />
+        <div class="img-div">
+          <div id="red"></div>
+          <div id="blue"></div>
+          <div id="yellow"></div>
+          <div id="green"></div>
+        </div>
+      </div>
+      <div>
+        <h1>For individuals</h1>
+        <p>
+          Start benefiting from the wellness experience. For <br />
+          companies looking on increasing productivity, and improving<br />
+          organization wellness.
+        </p>
+      </div>
+    </section>
+
+    <section id="section-2">
+      <form>
+        <div id="column-container">
+          <div class="row-div">
+            <div class="label-input">
+              <label for="fname">First Name</label>
+              <input type="text" name="fname" value="Tolu" id="fname" />
+            </div>
+
+            <div class="label-input">
+              <label for="lname">Last Name</label>
+              <input type="text" name="lname" value="Last Name" id="lname" />
+            </div>
+          </div>
+
+          <div class="row-div">
+            <div class="label-input">
+              <label for="gender">Gender</label>
+              <select id="gender">
+                <option value="Select here" disabled selected>
+                  Select here
+                </option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div class="label-input">
+              <label for="dob">Date of Birth</label>
+              <input type="date" value="Select here" id="dob" />
+            </div>
+          </div>
+
+          <div class="row-div">
+            <div class="label-input">
+              <label for="weight">Weight(KG)</label>
+              <input type="number" id="weight" placeholder="Enter Weight" />
+            </div>
+            <div class="label-input">
+              <label for="height">Height(CM)</label>
+              <input
+                type="number"
+                id="height"
+                placeholder="Enter height here"
+              />
+            </div>
+          </div>
+          <div class="row-div">
+            <div class="label-input">
+              <label for="activity">Activity Level</label>
+              <select id="activity">
+                <option value="Select here" disabled selected>
+                  Select here
+                </option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row-div">
+            <div class="label-input">
+              <label for="pwd">Password</label>
+              <input
+                type="password"
+                id="pwd"
+                name="pwd"
+                maxlength="10"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="row-div label-input">
+            <input
+              type="Submit"
+              value="Register"
+              id="register"
+              name="register"
+            />
+          </div>
+        </div>
+
+        <div id="term-policy">
+          <a href="#">Terms of use </a>and our <a href="#">Privacy policy</a>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

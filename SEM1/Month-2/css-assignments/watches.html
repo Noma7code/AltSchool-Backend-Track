@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novus Watch</title>
+
+    <style>
+      body {
+        background-color: rgba(169, 175, 226, 0.9);
+        font-family: "Times New Roman", Times, serif;
+      }
+      .container {
+        width: 340px;
+        height: 380px;
+        border-radius: 20px;
+
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      img {
+        width: 340px;
+        height: 290px;
+        border-radius: 10px 10px 0 0;
+
+        background-color: antiquewhite;
+      }
+      .description {
+        background-color: white;
+        border-radius: 0 0 10px 10px;
+        margin-top: -5px;
+        padding-left: 10px;
+      }
+      #novus {
+        font-size: 30px;
+      }
+      span {
+        color: gray;
+        font-size: 20px;
+      }
+      .new {
+        width: fit-content;
+        background-color: hsl(60, 44%, 61%);
+        padding: 10px;
+        border-radius: 10px 50px 50px 10px;
+        position: relative;
+        left: 490px;
+        top: 62px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="new">
+      <p class="new">New and Improved!</p>
+    </div>
+    <div class="container">
+      <div class="img-div flex-item">
+        <img src="./images/watch-img.jpg" alt="watch image" />
+      </div>
+      <div class="description">
+        <p id="novus">Novus Watch <span>Series IV</span></p>
+        <p>
+          The pinnacle of fashion and tech. This wearable<br />
+          piece is an homage to gilded palaces and minimal<br />
+          regalia, combining nouveau-deco and brutalism<br />
+          influences in a compact, Swiss-made watch.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
